@@ -21,25 +21,28 @@ function tabsAppear(tabs) {
   tabs.style.padding = "0 0.8rem";
   tabs.style.margin = "0 auto 5rem auto";
   tabs.style.maxWidth = "100rem";
-  tabs.style.maxHeight = "100rem";
+  tabs.style.maxHeight = "150rem";
   tabs.style.display = "block";
-  tabs.style.transition = "all .7s"
+
 }
 
 piz.addEventListener("click", () => {
+  tabsAppear(tabs1);
   tabsDisappear(tabs2);
   tabsDisappear(tabs3);
-  tabsAppear(tabs1);
+  
 });
 
 past.addEventListener("click", () => {
+    tabsAppear(tabs2);
   tabsDisappear(tabs1);
   tabsDisappear(tabs3);
-  tabsAppear(tabs2);
+  
 });
 
 start.addEventListener("click", () => {
+    tabsAppear(tabs3);
   tabsDisappear(tabs1);
   tabsDisappear(tabs2);
-  tabsAppear(tabs3);
+  
 });
