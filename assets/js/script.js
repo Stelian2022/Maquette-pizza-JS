@@ -18,7 +18,7 @@ function tabsDisappear(tabs) {
 }
 
 function tabsAppear(tabs) {
-  tabs.style.padding = "0 0.8rem";
+  tabs.style.padding = "0 1rem";
   tabs.style.margin = "0 auto 5rem auto";
   tabs.style.maxWidth = "100rem";
   tabs.style.maxHeight = "150rem";
